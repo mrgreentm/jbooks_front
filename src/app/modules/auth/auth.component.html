@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="auth-container">
+    <div class="title-container">
+      <h1>JBooks</h1>
+    </div>
+
+    <form [formGroup]="form">
+      <mat-form-field appearance="fill">
+        <mat-label>Insira seu e-mail</mat-label>
+        <input
+          matInput
+          placeholder="pat@example.com"
+          formControlName="email"
+          required
+        />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Insira sua senha</mat-label>
+        <input
+          matInput
+          placeholder="senha"
+          type="password"
+          formControlName="password"
+          required
+        />
+      </mat-form-field>
+      <button (click)="show()">Logar</button>
+    </form>
+  </div>
+</div>
