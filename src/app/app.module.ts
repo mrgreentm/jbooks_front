@@ -7,8 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 ;
 import { HttpClientModule } from '@angular/common/http';
-import { SharedModule } from './modules/shared-module/shared-module.module';
 import { CommonModule } from '@angular/common';
+import { SharedModule } from './modules/shared-module/shared-module.module';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,8 @@ import { CommonModule } from '@angular/common';
     AppRoutingModule,
     SharedModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],

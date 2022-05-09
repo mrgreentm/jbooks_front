@@ -1,0 +1,13 @@
+.nav-bar-container {
+  height: 3rem;
+  width: calc(100% - 2rem);
+  background-color: #fff;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  p {
+    margin: 0;
+    padding-left: 2rem;
+  }
+}

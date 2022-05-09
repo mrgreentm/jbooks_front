@@ -1,3 +1,4 @@
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 // IMPORT ALL MATERIAL COMPONENTS
@@ -53,6 +54,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
+import { FooterComponent } from './footer/footer.component';
 
 const AllMaterialModules = [
   MatAutocompleteModule,
@@ -94,8 +96,8 @@ const AllMaterialModules = [
 ];
 
 @NgModule({
-  imports: [CommonModule, BrowserModule],
-  declarations: [],
-  exports: [AllMaterialModules],
+  imports: [CommonModule, BrowserModule, MatIconModule],
+  declarations: [NavBarComponent, FooterComponent],
+  exports: [AllMaterialModules, NavBarComponent, FooterComponent],
 })
 export class SharedModule {}
