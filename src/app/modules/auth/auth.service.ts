@@ -10,6 +10,6 @@ export class AuthService {
   constructor(private httpClient: HttpClient) {}
 
   authentication(data: { email: string; password: string }): Observable<any> {
-    return this.httpClient.post(this.apiUrl, data);
+    return this.httpClient.post('/api/auth', data);
   }
 }
