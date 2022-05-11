@@ -22,7 +22,7 @@ export class RegisterComponent implements OnInit {
   show(): void {
     this.service
       .registerUser(this.form.value)
-      .subscribe((res) => console.log(res));
+      .subscribe();
 
     this.router.navigateByUrl('/home');
   }
