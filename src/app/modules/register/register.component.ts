@@ -19,7 +19,7 @@ export class RegisterComponent implements OnInit {
   }
 
   ngOnInit(): void {}
-  show(): void {
+  registerUser(): void {
     this.service
       .registerUser(this.form.value)
       .subscribe();

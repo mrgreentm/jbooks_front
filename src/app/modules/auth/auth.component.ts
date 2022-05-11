@@ -20,7 +20,7 @@ export class AuthComponent implements OnInit {
   ngOnInit(): void {
     this.form.markAllAsTouched();
   }
-  show(): void {
+  login(): void {
     this.authService.authentication(this.form.value).subscribe((res) => {
       if (res.token) {
         this.router.navigateByUrl('/home');
