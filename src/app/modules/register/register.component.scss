@@ -1,0 +1,24 @@
+.register-container {
+  background-color: #fff;
+  width: 30%;
+  margin: 0 3rem 0 3rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+form {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mat-form-field {
+  width: 90%;
+  margin: 0 auto;
+}
+button {
+  border: none;
+  background-color:#96BBBB;
+  color: #fff;
+  height: 3rem;
+  transition: all 0.5s;
+}
