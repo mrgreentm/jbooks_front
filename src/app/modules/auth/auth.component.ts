@@ -22,7 +22,9 @@ export class AuthComponent implements OnInit {
   }
   login(): void {
     this.authService.authentication(this.form.value).subscribe((res) => {
+      this.authService.setUser(res.user);
       if (res.token) {
+        this.authService.setUser(res.user);
         this.router.navigateByUrl('/home');
       }
     });
