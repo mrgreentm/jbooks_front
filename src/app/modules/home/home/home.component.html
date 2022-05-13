@@ -1,5 +1,12 @@
 <div class="home-container">
-  <div class="title-container">
-    {{ user?.name }}, seja bem-vindo ao JBooks, o seu fórum de Livros!
+  <div class="profile-container">
+    <div class="user-container">
+      <img class="user-image" src="https://picsum.photos/200/300" />
+      <div class="data-user-container">
+        <p>Nome: {{ user?.name }}</p>
+        <p>Email: {{ user?.email }}</p>
+        <p>Interesses: Animes, literatura e programação</p>
+      </div>
+    </div>
   </div>
 </div>
