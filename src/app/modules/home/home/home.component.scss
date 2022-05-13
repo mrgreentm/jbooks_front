@@ -50,3 +50,13 @@ p {
   padding: 3rem;
   border-radius: 10px;
 }
+.favorites-post{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 0.7rem 0 0.7rem 0;
+}
+mat-icon {
+  margin-right: 0.5rem;
+  color: rgb(255, 255, 8);
+}
