@@ -8,6 +8,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { AuthComponent } from './auth.component';
 import { AuthRoutingModule } from './auth-routing.module';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { AuthRoutingModule } from './auth-routing.module';
     MatInputModule,
     MatCardModule,
     AuthRoutingModule,
+    MatIconModule
   ],
   exports: [AuthComponent],
 })

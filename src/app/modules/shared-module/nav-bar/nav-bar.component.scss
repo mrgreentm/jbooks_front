@@ -4,10 +4,34 @@
   background-color: #fff;
   margin-bottom: 2rem;
   display: flex;
+  padding: 1rem;
+  p {
+    margin: 0;
+    padding-left: 2rem;
+  }
+}
+.icons-container {
+  height: 3rem;
+  width: calc(100% - 2rem);
+  background-color: #fff;
+  margin-bottom: 2rem;
+  display: flex;
   align-items: center;
   padding: 1rem;
   p {
     margin: 0;
     padding-left: 2rem;
   }
+}
+.button-container {
+  width: 20%;
+}
+button {
+  border: none;
+  color: #fff;
+  height: 3rem;
+  transition: all 0.5s;
+  background-color: #4f46ba;
+  border-radius: 10px;
+  width: 100%;
 }

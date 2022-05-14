@@ -1,7 +1,20 @@
 <div class="container">
+  <div class="show-product">
+    <h1 class="product-title">
+      A JBooks é um fórum para os Amantes dos Livros.
+    </h1>
+    <p class="subtitle">
+      Com a JBooks, nunca foi tão fácil compartilhar conhecimento. Junte-se a
+      nós e faça parte desta família.
+    </p>
+    <div class="saller-container">
+      <mat-icon class="icon">attach_money</mat-icon>
+      <p class="saller-title">Compre conosco pela Shopee!</p>
+    </div>
+  </div>
   <div class="auth-container">
     <div class="title-container">
-      <h1>JBooks</h1>
+      <h1 class="title">JBooks</h1>
     </div>
 
     <form [formGroup]="form">
@@ -25,7 +38,6 @@
         />
       </mat-form-field>
       <button (click)="login()">Logar</button>
-      <button routerLink="/register">Cadastre-se</button>
     </form>
   </div>
 </div>
