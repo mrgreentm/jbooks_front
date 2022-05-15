@@ -107,15 +107,14 @@ h2 {
   padding: 0.3rem;
   text-align: center;
 }
-.mat-card {
-  box-shadow: none;
-}
+
 h3 {
   font-weight: 500;
   font-size: 1rem;
   line-height: 30px;
   letter-spacing: -0.02em;
   color: #64607d;
+  text-align: center;
 }
 .posts-cards {
   gap: 1rem;
@@ -128,10 +127,12 @@ h3 {
   img {
     width: 100px;
     height: 150px;
+    padding: 10px;
+    border-radius: 20px;
   }
   h2 {
     font-size: 0.8rem;
     line-height: normal;
   }
-  box-shadow: 5px 1px 4px #cbcbcb;
+  box-shadow: 0px 64px 194px rgb(0 0 0 / 10%);
 }
