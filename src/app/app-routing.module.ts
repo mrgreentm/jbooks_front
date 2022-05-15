@@ -1,3 +1,4 @@
+import { AuthComponent } from './modules/auth/auth.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -19,6 +20,10 @@ const routes: Routes = [
         (m) => m.RegisterModule
       ),
   },
+  {
+    path: '**',
+    redirectTo: ''
+  }
 ];
 
 @NgModule({
