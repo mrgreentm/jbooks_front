@@ -86,3 +86,15 @@ button:hover {
   background: #22d497;
   border-radius: 47px;
 }
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .show-product,
+  .auth-container {
+    width: 100%;
+  }
+  .auth-container {
+    margin: 0 0 3rem 0;
+  }
+}
