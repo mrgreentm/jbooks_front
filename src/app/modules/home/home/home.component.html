@@ -1,51 +1,68 @@
 <div class="home-container">
   <div class="profile-container">
     <div class="user-container">
-      <img class="user-image" src="https://picsum.photos/200/300" />
+      <img class="user-image" src="https://picsum.photos/seed/picsum/200/300" />
       <div class="data-user-container">
-        <p>Nome: {{ user?.name }}</p>
-        <p>Email: {{ user?.email }}</p>
-        <p>Interesses: Animes, literatura e programação</p>
+        <p>{{ user?.name || "Usuário" }}</p>
+        <p class="subtitle">Interesses: Animes, literatura e programação</p>
       </div>
     </div>
-    <button class="button">Minhas Postagens</button>
-    <div class="favorites-post">
-      <mat-icon>stars</mat-icon> <p>Postagens Prediletas</p>
-    </div>
   </div>
-
   <div class="others-posts">
-    <p>Postagens mais relevantes -</p>
-    <mat-card class="example-card">
-      <mat-card-title-group>
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Small</mat-card-subtitle>
-        <img
-          mat-card-sm-image
-          src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-        />
-      </mat-card-title-group>
-      <mat-card-content>
-        Lorem ipsum dolor sit amet. In consequatur culpa ut doloremque quia ad
-        iste nostrum et optio tempora. Quo officiis velit ea sint distinctio est
-        quia necessitatibus est alias alias.
-      </mat-card-content>
+    <mat-card>
+      <img class="post-image" src="https://picsum.photos/200/300?grayscale" />
+      <p class="data">08-11-2021 - Natureza</p>
+      <div class="title">
+        <h2>Believing neglected so so allowance existence departure.</h2>
+      </div>
+      <div class="content">
+        <h3>
+          End-to-end payments and financial management in a single solution.
+          Meet the right platform to help realize.
+        </h3>
+      </div>
     </mat-card>
-
-    <mat-card class="example-card">
-      <mat-card-title-group>
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Medium</mat-card-subtitle>
-        <img
-          mat-card-md-image
-          src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-        />
-      </mat-card-title-group>
-      <mat-card-content>
-        Lorem ipsum dolor sit amet. In consequatur culpa ut doloremque quia ad
-        iste nostrum et optio tempora. Quo officiis velit ea sint distinctio est
-        quia necessitatibus est alias alias.
-      </mat-card-content>
+  </div>
+  <div class="posts-cards">
+    <div class="see-all">
+      <p>Postagens Recentes</p>
+      <button class="posts-button">Ver tudo</button>
+    </div>
+    <mat-card class="small-card">
+      <img class="post-image-card" src="https://picsum.photos/id/237/200/300" />
+      <div class="data-container">
+        <p class="data">08-11-2021 - Natureza</p>
+        <div class="title">
+          <h2>Believing neglected so so allowance existence departure.</h2>
+        </div>
+      </div>
+    </mat-card>
+    <mat-card class="small-card">
+      <img class="post-image-card" src="https://picsum.photos/id/237/200/300" />
+      <div class="data-container">
+        <p class="data">08-11-2021 - Natureza</p>
+        <div class="title">
+          <h2>Believing neglected so so allowance existence departure.</h2>
+        </div>
+      </div>
+    </mat-card>
+    <mat-card class="small-card">
+      <img class="post-image-card" src="https://picsum.photos/id/237/200/300" />
+      <div class="data-container">
+        <p class="data">08-11-2021 - Natureza</p>
+        <div class="title">
+          <h2>Believing neglected so so allowance existence departure.</h2>
+        </div>
+      </div>
+    </mat-card>
+    <mat-card class="small-card">
+      <img class="post-image-card" src="https://picsum.photos/id/237/200/300" />
+      <div class="data-container">
+        <p class="data">08-11-2021 - Natureza</p>
+        <div class="title">
+          <h2>Believing neglected so so allowance existence departure.</h2>
+        </div>
+      </div>
     </mat-card>
   </div>
 </div>
