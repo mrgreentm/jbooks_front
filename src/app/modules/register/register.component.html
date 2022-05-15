@@ -1,35 +1,44 @@
-<div class="register-container">
-  <h1>Cadastre-se</h1>
-  <form [formGroup]="form">
-    <mat-form-field appearance="fill">
-      <mat-label>Insira seu nome</mat-label>
-      <input
-        matInput
-        placeholder="João Jacinto"
-        formControlName="name"
-        required
-      />
-    </mat-form-field>
-    <mat-form-field appearance="fill">
-      <mat-label>Insira seu e-mail</mat-label>
-      <input
-        matInput
-        placeholder="pat@example.com"
-        formControlName="email"
-        required
-      />
-    </mat-form-field>
-    <mat-form-field appearance="fill">
-      <mat-label>Insira sua senha</mat-label>
-      <input
-        matInput
-        placeholder="senha"
-        type="password"
-        formControlName="password"
-        required
-      />
-    </mat-form-field>
-    <button (click)="registerUser()">Finalizar Cadastro</button>
-
-  </form>
+<div class="global-container">
+  <div class="register-container">
+    <h1 class="title">Cadastre-se</h1>
+    <form [formGroup]="form">
+      <mat-form-field appearance="fill">
+        <mat-label>Insira seu nome</mat-label>
+        <input
+          matInput
+          placeholder="João Jacinto"
+          formControlName="name"
+          required
+        />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Insira seu e-mail</mat-label>
+        <input
+          matInput
+          placeholder="pat@example.com"
+          formControlName="email"
+          required
+        />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Insira sua senha</mat-label>
+        <input
+          matInput
+          placeholder="Senha"
+          type="password"
+          formControlName="password"
+          required
+        />
+      </mat-form-field>
+      <button (click)="registerUser()">Finalizar Cadastro</button>
+    </form>
+  </div>
+  <div class="notice">
+    <mat-icon class="icon">help_outline</mat-icon>
+    <h1 class="product-title">Você sabia?</h1>
+    <p class="subtitle">
+      A Índia é o país que mais lê no mundo, registrando uma média de 10 horas
+      semanais para cada leitor.
+    </p>
+  </div>
 </div>

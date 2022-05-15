@@ -1,3 +1,4 @@
+import { MatIconModule } from '@angular/material/icon';
 import { RegisterService } from './register.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -21,6 +22,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
+    MatIconModule
   ],
   providers: [RegisterService],
 })
