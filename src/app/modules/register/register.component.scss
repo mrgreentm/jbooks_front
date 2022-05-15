@@ -55,3 +55,15 @@ button:hover {
 .icon {
   font-size: 6rem;
 }
+@media (max-width: 768px) {
+  .global-container {
+    flex-direction: column;
+  }
+  .register-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .notice {
+    display: none;
+  }
+}
