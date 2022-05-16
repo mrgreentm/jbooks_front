@@ -29,4 +29,7 @@ export class AuthComponent implements OnInit {
       }
     });
   }
+  redirect(): void {
+    this.router.navigateByUrl('/register');
+  }
 }

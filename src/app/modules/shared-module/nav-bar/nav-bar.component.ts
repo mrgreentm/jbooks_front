@@ -1,4 +1,4 @@
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss'],
 })
 export class NavBarComponent implements OnInit {
-  constructor(private router: Router) {}
+  param!: string;
+  constructor(private router: Router, public activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {}
-  redirect(): void {
-    this.router.navigateByUrl('/register');
-  }
+
 }

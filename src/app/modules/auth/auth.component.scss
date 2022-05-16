@@ -98,3 +98,16 @@ button:hover {
     margin: 0 0 3rem 0;
   }
 }
+.register {
+  border: none;
+  color: #fff;
+  height: 3rem;
+  transition: all 0.5s;
+  background-color: #4f46ba;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+.login:hover {
+  background-color: #4f46ba;
+}
