@@ -25,6 +25,7 @@ export class AuthComponent implements OnInit {
       this.authService.setUser(res.user);
       if (res.token) {
         this.authService.setUser(res.user);
+        this.authService.setUserOnStorage(res)
         this.router.navigateByUrl('/home');
       }
     });
