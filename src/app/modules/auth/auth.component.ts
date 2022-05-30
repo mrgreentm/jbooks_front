@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { FeedBackService } from '../shared-module/feedback-service/feedback.service';
 import { AuthService } from './auth.service';
 
 @Component({
@@ -10,7 +11,11 @@ import { AuthService } from './auth.service';
 })
 export class AuthComponent implements OnInit {
   form!: FormGroup;
-  constructor(private authService: AuthService, private router: Router) {
+  constructor(
+    private authService: AuthService,
+    private router: Router,
+    private feedBackService: FeedBackService
+  ) {
     this.form = new FormGroup({
       email: new FormControl(null, [Validators.required]),
       password: new FormControl(null, [Validators.required]),
@@ -25,8 +30,9 @@ export class AuthComponent implements OnInit {
       this.authService.setUser(res.user);
       if (res.token) {
         this.authService.setUser(res.user);
-        this.authService.setUserOnStorage(res)
+        this.authService.setUserOnStorage(res);
         this.router.navigateByUrl('/home');
+        this.feedBackService.openSnackBar(`Seja Bem-vindo, ${res.user.name}`);
       }
     });
   }

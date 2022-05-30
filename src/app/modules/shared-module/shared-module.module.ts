@@ -55,6 +55,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { FooterComponent } from './footer/footer.component';
+import { SnackBarComponent } from './feedback-service/snack-bar/snack-bar.component';
+import { FeedBackService } from './feedback-service/feedback.service';
 
 const AllMaterialModules = [
   MatAutocompleteModule,
@@ -96,8 +98,9 @@ const AllMaterialModules = [
 ];
 
 @NgModule({
-  imports: [CommonModule, BrowserModule, MatIconModule],
-  declarations: [NavBarComponent, FooterComponent],
-  exports: [AllMaterialModules, NavBarComponent, FooterComponent],
+  imports: [MatIconModule, MatSnackBarModule],
+  declarations: [NavBarComponent, FooterComponent, SnackBarComponent],
+  exports: [NavBarComponent, FooterComponent, SnackBarComponent],
+  providers: [FeedBackService],
 })
 export class SharedModule {}
