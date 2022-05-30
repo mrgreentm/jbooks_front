@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from './modules/shared-module/shared-module.module';
 import { MatIconModule } from '@angular/material/icon';
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,7 +23,7 @@ import { MatIconModule } from '@angular/material/icon';
     CommonModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
